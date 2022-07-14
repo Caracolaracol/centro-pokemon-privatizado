@@ -1,12 +1,10 @@
-// pre-entrega 1
-// funcionalidad inicial para un simulador, no necesariamente un código para la entrega final.
-// Mi idea para la entrega final es hacer un e-commerce
-
+// pre-entrega 1 - Simulador de centro pokemon privatizado
+// funcionalidad inicial para un simulador, no es necesariamente un código para la entrega final, en realidad Mi idea para la entrega final es hacer un e-commerce
 // pre entrega compuesto por: html, variables js, funciones, objetos, arrays, metodo de busqueda y filtrado sobre el array.
-// centro pokemon privatizado, calculadora de costo del servicio de curación
-// pienso en añadir al centro pokemon privatizado un simulador al final que ingrese los pokemon del usuario en un objeto llamado "hospital" o "sala de curacion" que esté lleno de otros pokemones(generados internamente) y que luego, para poder retirar a los pokemon del usuario una vez recuperados tenga que pedir el número (o una id de paciente) de cada pokemon, y si coloca otro número le saltaría un error que diría algo así como: "un entrenador que está sentado en la sala de espera está reclamando que te estás llevando su pokemon!" básicamente sería un juego de memoria (acordarse del id asignado a cada pokemon)
 
-// a lo mejor podría añadir un random entre 0-99 que sería la id del pokemon paciente y que se entregue la id luego de ingresar los datos de cada pokemon, el usuario tendría que recordar el id de cada pokemon para después de sanado, pueda retirarlo. el id estaría dentro del array de objetos.
+// centro pokemon privatizado, calculadora de costo del servicio de curación. centro pokemon de capacidad de 100 pacientes.
+
+// El usuario ingresa los pokemones que posee(entre 1 y 6), se le asigna un numero de id de paciente a cada pokemon y que el usuario debe memorizar. Una vez cancelado el costo del servicio de curación el usuario debe ingresar los id de sus pokemones uno por uno para poder retirarlos cuando estén sanos, si ingresa un numero distinto la enfermera le entregará un pokemon de otro entrenador.
 
 
 
@@ -191,6 +189,7 @@ const pokemon4 = new Pokemon(nombre4, nivel4, posicion4, id4)
 const pokemon5 = new Pokemon(nombre5, nivel5, posicion5, id5)
 const pokemon6 = new Pokemon(nombre6, nivel6, posicion6, id6)
 
+// array de objetos
 const pokemones = [pokemon1]
 
 if(numero === 2) {
@@ -365,6 +364,7 @@ if (isNaN(numero) || numero > 6) {
     alert(`Curar a tus pokemon cuesta ${costoTotal} dolares!`)
 }
 
+//variables vacias creadas
 let idEncontrado1
 let idEncontrado2
 let idEncontrado3
@@ -372,6 +372,7 @@ let idEncontrado4
 let idEncontrado5
 let idEncontrado6
 
+// ciclo para ingresar los id de los pokemon en el prompt.
 alert(`Gracias por preferir Centro Pokemón, sus pokemones están sanados!`)
 do {
     repetir = false
@@ -482,6 +483,7 @@ console.log(ids)
 console.log(idEncontrado1)
 console.log(idEncontrado2)
 
+//switch para dar una alerta de los pokemones sanados.
 switch(numero) {
     case 1:
         alert(`${ids[0].nombre} de nivel ${ids[0].nivel} ya está mucho mejor. Aquí lo tiene, gracias por preferir Centro pokemon Inc.`)
