@@ -365,12 +365,12 @@ if (isNaN(numero) || numero > 6) {
     alert(`Curar a tus pokemon cuesta ${costoTotal} dolares!`)
 }
 
-let idEncontrado1 = pokemones.find(element => element.id === idABuscar1)
-let idEncontrado2 = pokemones.find((elemento) => elemento.id === idABuscar2)
-let idEncontrado3 = pokemones.find((elemento) => elemento.id === idABuscar3)
-let idEncontrado4 = pokemones.find((elemento) => elemento.id === idABuscar4)
-let idEncontrado5 = pokemones.find((elemento) => elemento.id === idABuscar5)
-let idEncontrado6 = pokemones.find((elemento) => elemento.id === idABuscar6)
+let idEncontrado1
+let idEncontrado2
+let idEncontrado3
+let idEncontrado4
+let idEncontrado5
+let idEncontrado6
 
 alert(`Gracias por preferir Centro Pokemón, sus pokemones están sanados!`)
 do {
@@ -378,6 +378,7 @@ do {
     switch(numero) {
         case 1:
             idABuscar1 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idEncontrado1 = pokemones.find(element => element.id === idABuscar1)
             if (idEncontrado1 === undefined) {
                 alert(`un entrenador que está sentado en la sala de espera está reclamando que te estás llevando su pokemon! Ingresa el ID correcto por favor!`)
                 repetir = true
@@ -388,6 +389,8 @@ do {
         case 2:
             idABuscar1 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
             idABuscar2 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idEncontrado1 = pokemones.find(element => element.id === idABuscar1)
+            idEncontrado2 = pokemones.find(element => element.id === idABuscar2)
             if (idEncontrado1 === undefined || idEncontrado2 === undefined) {
                 alert(`un entrenador que está sentado en la sala de espera está reclamando que te estás llevando su pokemon! Ingresa el ID correcto por favor!`)
                 repetir = true
@@ -396,9 +399,12 @@ do {
                 break
             }
         case 3:
-            idABuscar1 = prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar2 = prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar3 = prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`)
+            idABuscar1 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar2 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar3 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idEncontrado1 = pokemones.find(element => element.id === idABuscar1)
+            idEncontrado2 = pokemones.find(element => element.id === idABuscar2)
+            idEncontrado3 = pokemones.find(element => element.id === idABuscar3)
             if (idEncontrado1 === undefined || idEncontrado2 === undefined || idEncontrado3 === undefined) {
                 alert(`un entrenador que está sentado en la sala de espera está reclamando que te estás llevando su pokemon! Ingresa el ID correcto por favor!`)
                 repetir = true
@@ -407,10 +413,14 @@ do {
                 break
             }
         case 4:
-            idABuscar1 = prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar2 = prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar3 = prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar4 = prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`)
+            idABuscar1 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar2 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar3 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar4 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idEncontrado1 = pokemones.find(element => element.id === idABuscar1)
+            idEncontrado2 = pokemones.find(element => element.id === idABuscar2)
+            idEncontrado3 = pokemones.find(element => element.id === idABuscar3)
+            idEncontrado4 = pokemones.find(element => element.id === idABuscar4)
             if (idEncontrado1 === undefined || idEncontrado2 === undefined || idEncontrado3 === undefined || idEncontrado4 === undefined) {
                 alert(`un entrenador que está sentado en la sala de espera está reclamando que te estás llevando su pokemon! Ingresa el ID correcto por favor!`)
                 repetir = true
@@ -419,11 +429,16 @@ do {
                 break
             }
         case 5:
-            idABuscar1 = prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar2 = prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar3 = prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar4 = prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar5 = prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`)
+            idABuscar1 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar2 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar3 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar4 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar5 = parseFloat(prompt(`por favor vaya ingresando uno por uno los id de tus pokemon para poder entregárselos`))
+            idEncontrado1 = pokemones.find(element => element.id === idABuscar1)
+            idEncontrado2 = pokemones.find(element => element.id === idABuscar2)
+            idEncontrado3 = pokemones.find(element => element.id === idABuscar3)
+            idEncontrado4 = pokemones.find(element => element.id === idABuscar4)
+            idEncontrado5 = pokemones.find(element => element.id === idABuscar5)
             if (idEncontrado1 === undefined || idEncontrado2 === undefined || idEncontrado3 === undefined || idEncontrado4 === undefined || idEncontrado5 === undefined) {
                 alert(`un entrenador que está sentado en la sala de espera está reclamando que te estás llevando su pokemon! Ingresa el ID correcto por favor!`)
                 repetir = true
@@ -432,12 +447,18 @@ do {
                 break
             }
         case 6:
-            idABuscar1 = prompt(`por favor ingrese uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar2 = prompt(`por favor ingrese uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar3 = prompt(`por favor ingrese uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar4 = prompt(`por favor ingrese uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar5 = prompt(`por favor ingrese uno por uno los id de tus pokemon para poder entregárselos`)
-            idABuscar6 = prompt(`por favor ingrese uno por uno los id de tus pokemon para poder entregárselos`)
+            idABuscar1 = parseFloat(prompt(`por favor ingrese uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar2 = parseFloat(prompt(`por favor ingrese uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar3 = parseFloat(prompt(`por favor ingrese uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar4 = parseFloat(prompt(`por favor ingrese uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar5 = parseFloat(prompt(`por favor ingrese uno por uno los id de tus pokemon para poder entregárselos`))
+            idABuscar6 = parseFloat(prompt(`por favor ingrese uno por uno los id de tus pokemon para poder entregárselos`))
+            idEncontrado1 = pokemones.find(element => element.id === idABuscar1)
+            idEncontrado2 = pokemones.find(element => element.id === idABuscar2)
+            idEncontrado3 = pokemones.find(element => element.id === idABuscar3)
+            idEncontrado4 = pokemones.find(element => element.id === idABuscar4)
+            idEncontrado5 = pokemones.find(element => element.id === idABuscar5)
+            idEncontrado6 = pokemones.find(element => element.id === idABuscar6)
             if (idEncontrado1 === undefined || idEncontrado2 === undefined || idEncontrado3 === undefined || idEncontrado4 === undefined || idEncontrado5 === undefined || idEncontrado6 === undefined) {
                 alert(`un entrenador que está sentado en la sala de espera está reclamando que te estás llevando su pokemon! Ingresa el ID correcto por favor!`)
                 repetir = true
@@ -460,4 +481,25 @@ ids.push(idEncontrado6)
 console.log(ids)
 console.log(idEncontrado1)
 console.log(idEncontrado2)
+
+switch(numero) {
+    case 1:
+        alert(`${ids[0].nombre} de nivel ${ids[0].nivel} ya está mucho mejor. Aquí lo tiene, gracias por preferir Centro pokemon Inc.`)
+        break
+    case 2:
+        alert(`${ids[0].nombre} de nivel ${ids[0].nivel} y ${pokemones[1].nombre} de nivel ${ids[1].nivel} ya están mucho mejor. Aquí los tiene, gracias por preferir Centro pokemon Inc.`)
+        break
+    case 3:
+        alert(`${ids[0].nombre} de nivel ${ids[0].nivel}, ${pokemones[1].nombre} de nivel ${ids[1].nivel} y ${pokemones[2].nombre} de nivel ${ids[2].nivel} ya están mucho mejor. Aquí los tiene, gracias por preferir Centro pokemon Inc.`)
+        break
+    case 4:
+        alert(`${ids[0].nombre} de nivel ${ids[0].nivel}, ${pokemones[1].nombre} de nivel ${ids[1].nivel}, ${pokemones[2].nombre} de nivel ${ids[2].nivel} y ${pokemones[3].nombre} de nivel ${ids[3].nivel} ya están mucho mejor. Aquí los tiene, gracias por preferir Centro pokemon Inc.`)
+        break
+    case 5:
+        alert(`${ids[0].nombre} de nivel ${ids[0].nivel}, ${pokemones[1].nombre} de nivel ${ids[1].nivel}, ${pokemones[2].nombre} de nivel ${ids[2].nivel}, ${pokemones[3].nombre} de nivel ${ids[3].nivel}y ${pokemones[4].nombre} de nivel ${ids[4].nivel}ya están mucho mejor. Aquí los tiene, gracias por preferir Centro pokemon Inc.`)
+        break
+    case 6:
+        alert(`${ids[0].nombre} de nivel ${ids[0].nivel}, ${pokemones[1].nombre} de nivel ${ids[1].nivel}, ${pokemones[2].nombre} de nivel ${ids[2].nivel}, ${pokemones[3].nombre} de nivel ${ids[3].nivel}y ${pokemones[4].nombre} de nivel ${ids[4].nivel} y ${pokemones[5].nombre} de nivel ${ids[5].nivel} ya están mucho mejor. Aquí los tiene, gracias por preferir Centro pokemon Inc.`)
+        break
+}
 
