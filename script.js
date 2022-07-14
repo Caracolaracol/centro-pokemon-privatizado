@@ -3,12 +3,12 @@
 // Mi idea para la entrega final es hacer un e-commerce
 
 // pre entrega compuesto por: html, variables js, funciones, objetos, arrays, metodo de busqueda y filtrado sobre el array.
-
-// pienso en añadir al centro pokemon privatizado un simulador al final que ingrese los pokemon del usuario en un objeto llamado "hospital" o "sala de curacion" que esté lleno de otros pokemones(generados internamente) y que luego, para poder retirar a los pokemon del usuario una vez recuperados tenga que pedir el número (o una id de paciente) de cada pokemon, y si coloca otro número le saltaría un error que diría algo así como: "un entrenador que está sentado en la sala de espera está reclamando que te estás llevando su pokemon!"
+// centro pokemon privatizado, calculadora de costo del servicio de curación
+// pienso en añadir al centro pokemon privatizado un simulador al final que ingrese los pokemon del usuario en un objeto llamado "hospital" o "sala de curacion" que esté lleno de otros pokemones(generados internamente) y que luego, para poder retirar a los pokemon del usuario una vez recuperados tenga que pedir el número (o una id de paciente) de cada pokemon, y si coloca otro número le saltaría un error que diría algo así como: "un entrenador que está sentado en la sala de espera está reclamando que te estás llevando su pokemon!" básicamente sería un juego de memoria (acordarse del id asignado a cada pokemon)
 
 // a lo mejor podría añadir un random entre 0-99 que sería la id del pokemon paciente y que se entregue la id luego de ingresar los datos de cada pokemon, el usuario tendría que recordar el id de cada pokemon para después de sanado, pueda retirarlo. el id estaría dentro del array de objetos.
 
-// centro pokemon privatizado, calculadora de costo del servicio de curación
+
 
 alert("Se privatizó el centro pokemon, ahora curar a tus pokemón tiene un costo! (10 dolares por pokemon, 2 dolares por HP recuperado)") // Actualmente el valor está a 2 dólares el HP, más un costo base de 10 dólares por pokemón.
 let repetir = true
